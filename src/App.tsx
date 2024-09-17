@@ -1,24 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Counter from "./components/Counter";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-gray-600 p-[1em_0]">
+      <h1 className="text-center text-[1.5rem] font-bold uppercase">
+        redux essentials
+      </h1>
+      <div className="w-[90%] m-[0_auto] mt-[1em]">
+        <Counter />
+      </div>
     </div>
   );
 }
